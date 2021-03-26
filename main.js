@@ -12,4 +12,6 @@ if (Age > 21) {
 if (Age < 21) {
     console.log("you are younger than 21");
 }
- 
+ if (Age < 21) {
+    console.log("you are younger than 21");
+}
