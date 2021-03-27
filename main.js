@@ -64,3 +64,7 @@ printIndex(numbers, 6);
 function printIndex(inputArray, index) {
     console.log(inputArray[index]);
 }
+printIndex(numbers, 10);
+function printIndex(inputArray, index) {
+    console.log(inputArray[index]);
+}
