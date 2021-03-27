@@ -43,3 +43,24 @@ for (var index = 0; index < ages.length; index++){
     //console.log(ages[j]);
    // j++;
 //}
+
+var numbers = [33, 30, 29, 32, 28, 35, 31, 38, 56,3,33, 75, 21, 90, 7];
+lowNumber(numbers);
+function lowNumber (inputArray) {
+    console.log(Math.min.apply(null, inputArray));
+}
+
+//function low(lowNumber) {
+    //console.log(Math.min.apply(lowNumber));
+//}
+//low();
+
+var numbers = [33, 30, 29, 32, 28, 35, 31, 38, 56,3,33, 75, 21, 90, 7];
+maxNumber(numbers);
+function maxNumber (inputArray) {
+    console.log(Math.max.apply(null, inputArray));
+}
+printIndex(numbers, 6);
+function printIndex(inputArray, index) {
+    console.log(inputArray[index]);
+}
