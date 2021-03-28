@@ -68,3 +68,33 @@ printIndex(numbers, 10);
 function printIndex(inputArray, index) {
     console.log(inputArray[index]);
 }
+   
+//var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+//function duplicateArray(array) {
+    //var results = [];
+    //array.forEach(funcion(element, index)) 
+       // if (array.indexOf(element, index + 1) > -1) {
+           // if (results.indexOf(element) === -1) {
+            //    results.push(element);
+           // }
+    //}
+    //console.log(results);
+   // }
+
+duplicateArray(numbers);
+
+function duplicateArray(inputArray) {
+  var duplicates = [];
+  inputArray.forEach(function(element, index) {
+    if (inputArray.indexOf(element, index + 1) > -1) {
+      if (duplicates.indexOf(element) === -1) {
+        duplicates.push(element);
+     }
+    }
+  });
+  console.log(duplicates);
+}
+
+var myColor = ["Red", "Green", "White", "Black"];
+var newColor = myColor.join(",");
+console.log(newColor);
