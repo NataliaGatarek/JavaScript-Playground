@@ -98,3 +98,121 @@ function duplicateArray(inputArray) {
 var myColor = ["Red", "Green", "White", "Black"];
 var newColor = myColor.join(",");
 console.log(newColor);
+
+var reverse = "1358630";
+function reverseNumber(reverse) {
+  return (
+    parseFloat(
+      reverse
+        .toString()
+        .split('')
+        .reverse()
+        .join('')
+    )
+    )
+}
+ console.log(reverseNumber(reverse));
+    
+var x = "dog";
+function alpOrder(x) {
+    return (
+        x
+            .toString()
+            .split('')
+            .sort()
+        .join('')
+    )
+}
+console.log(alpOrder(x));
+
+var txt = "spanish water dog";
+function toUpper(txt) {
+    return txt 
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+console.log(toUpper(txt));
+
+var y = "spanish water dog is my favourite dog breed";
+
+//function LongestWord(y) {
+   // return y
+    //.split(' ')
+    //.sort(function(a, b) { return a.length-b.length; }) 
+    //.pop().length;
+//}
+//console.log(LongestWord(y));
+
+function longestWord(y) {
+    var sortedWord = y.split(' ')
+                        .sort((wordA, wordB) => wordB.length - wordA.length)
+    return sortedWord[0]
+}
+
+var names = ['Post Malone', 'Die Antwoord', 'Still Corners' ];
+var ul = document.getElementById("band-list");
+
+for (var i = 0; i < names.length; i++) {
+    var name = names[i];
+    var li = document.createElement('li');
+     li.innerHTML = name;  
+    document.getElementById("band-list").appendChild(li);
+}
+
+var h = 5;
+function zero () {
+    var multiply = h * h;
+   console.log("zero =" + " " + multiply);
+}
+
+var f = 6;
+var g = 6;
+var multiplication = function one () {return(f*g); }
+console.log(multiplication());
+
+var k = 2;
+var l = 3;
+var m = 4;
+function two (k, l, m){
+    return k * l*m;
+}
+var multip=two(k, l,m);
+console.log(multip);
+
+
+var test = sides => {
+  if (sides.every(el => el > 0)) {
+    const size = new Set(sides).size
+    if (size === 1) console.log("equilateral triangle")
+    else if (size === 2) console.log("isosceles triangle")
+    else console.log("scalene triangle")
+  } else {
+    console.log("invalid")
+  }
+}
+ 
+var a = 5;
+var b = 5;
+var c = 5;
+function triangle(a,b,c){ 
+if ((a > 0 && b >0 && c >0 ) && (a == b && b == c && c == a)){
+  console.log("equilateral triangle")
+}
+if ((a > 0 && b >0 && c >0 ) && (a == b || b == c || c == a)){
+  console.log("isosceles triangle")
+}
+   }     
+    
+const getSide = l => Number(prompt(`Please input the the second side (${l})`))
+const sides = [getSide('a'), getSide('b'), getSide('c')]
+
+if (sides.every(el => el > 0)) {
+  const size = new Set(sides).size
+  if (size === 1) console.log("equilateral triangle")
+  else if (size === 2) console.log("isosceles triangle")
+  else console.log("scalene triangle")
+} else {
+  console.log("invalid")
+}
