@@ -58,10 +58,12 @@ function lowNumber (inputArray) {
     console.log(Math.min.apply(null, inputArray));
 }
 
-//function low(lowNumber) {
-    //console.log(Math.min.apply(lowNumber));
-//}
-//low();
+console.log(Math.min(...numbers));
+
+function min(numbers) {
+  return [Math.min(...numbers)];
+}
+console.log(min(numbers));
 
 //4
 var numbers = [33, 30, 29, 32, 28, 35, 31, 38, 56,3,33, 75, 21, 90, 7];
@@ -69,6 +71,12 @@ maxNumber(numbers);
 function maxNumber (inputArray) {
     console.log(Math.max.apply(null, inputArray));
 }
+
+console.log(Math.max(...numbers));
+function max(numbers) {
+    return [Math.max(...numbers)];
+}
+console.log(max(numbers));
 
 //5
 printIndex(numbers, 6);
@@ -79,8 +87,9 @@ printIndex(numbers, 10);
 function printIndex(inputArray, index) {
     console.log(inputArray[index]);
 }
- 
+
 //6
+
 //var array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
 //function duplicateArray(array) {
     //var results = [];
@@ -167,7 +176,7 @@ function longestWord(y) {
                         .sort((wordA, wordB) => wordB.length - wordA.length)
     return sortedWord[0]
 }
-//1
+// dom 1
 var names = ['Post Malone', 'Die Antwoord', 'Still Corners' ];
 var ul = document.getElementById("band-list");
 
@@ -177,6 +186,7 @@ for (var i = 0; i < names.length; i++) {
      li.innerHTML = name;  
     document.getElementById("band-list").appendChild(li);
 }
+
 //extra funcion
 //1
 var h = 5;
