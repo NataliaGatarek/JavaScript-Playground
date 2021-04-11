@@ -31,7 +31,6 @@ names.sort();
 console.log(names[0]);
 console.log(names[names.length - 1]);
 for (var index = 0; index < names.length; index++) {
-    //console.log(index);//
     console.log(names[index]);
 }
 
