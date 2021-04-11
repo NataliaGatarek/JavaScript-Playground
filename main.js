@@ -5,10 +5,15 @@ console.log("Natalia");
 //2
 var Age =32;
 console.log(33);
+console.log(Age);
 //3
 var juliaAge = 32;
 var ageDiff = function age () {return(Age - juliaAge); }
 console.log(ageDiff());
+
+var ageDif = Age - juliaAge
+console.log(ageDif);
+
 //4
 if (Age > 21) {
     console.log("you are older than 21");
@@ -50,6 +55,7 @@ for (var index = 0; index < ages.length; index++){
     //console.log(ages[j]);
    // j++;
 //}
+
 //3
 var numbers = [33, 30, 29, 32, 28, 35, 31, 38, 56,3,33, 75, 21, 90, 7];
 lowNumber(numbers);
