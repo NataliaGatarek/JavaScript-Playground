@@ -70,6 +70,18 @@ function min(numbers) {
 }
 console.log(min(numbers));
 
+function lowNumb(array) {
+    var y;
+    var min = Infinity;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] < min) {
+            min = array [i]; 
+        }
+    }
+    return min;
+}
+console.log(lowNumb(numbers));
+
 //4
 var numbers = [33, 30, 29, 32, 28, 35, 31, 38, 56,3,33, 75, 21, 90, 7];
 maxNumber(numbers);
@@ -83,6 +95,18 @@ function max(numbers) {
 }
 console.log(max(numbers));
 
+function maxNumb(array) {
+    var i;
+    var min = Infinity;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] < max) {
+            max = array [i]; 
+        }
+    }
+    return min;
+}
+console.log(maxNumb(numbers));
+
 //5
 printIndex(numbers, 6);
 function printIndex(inputArray, index) {
@@ -92,6 +116,7 @@ printIndex(numbers, 10);
 function printIndex(inputArray, index) {
     console.log(inputArray[index]);
 }
+
 
 //6
 
@@ -125,6 +150,7 @@ function duplicateArray(inputArray) {
 var myColor = ["Red", "Green", "White", "Black"];
 var newColor = myColor.join(",");
 console.log(newColor);
+console.log(myColor.join('-'));
 
 //1
 var reverse = "1358630";
