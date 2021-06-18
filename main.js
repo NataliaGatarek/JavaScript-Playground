@@ -207,6 +207,7 @@ function longestWord(y) {
                         .sort((wordA, wordB) => wordB.length - wordA.length)
     return sortedWord[0]
 }
+
 // dom 1
 var names = ['Post Malone', 'Die Antwoord', 'Still Corners' ];
 var ul = document.getElementById("band-list");
@@ -316,6 +317,37 @@ if(i % 2 != 0){
   }
 }
 
+//coding challange
+const diceChallenge = (N, M) => {
+    const one = []
+    const two = []
+    for (i = 1; i <= N; i++) {
+        one.push(i)
+    }
+    for (j = 1; j <= M; j++) {
+        two.push(j)
+    }
+    const alltogether = []
+       one.forEach((one) => {
+        two.forEach(two => {
+            alltogether.push(one + two)
+        })
+       })
+    const count = count(alltogether)
+
+return alltogether
+}
+
+function count(arr) {
+   arr.reduce((prev, curr) => {
+    if (!prev[curr]) {
+        prev[curr] = 1
+    } else {
+        prev[curr] = prev[curr] + 1
+    }
+    return prev;
+    }, {});
+}
 
 
 
